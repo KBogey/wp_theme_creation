@@ -3,8 +3,11 @@
 <div class="container">
     <div class="text-center">
         <h1>
-            <?php _e('here is the body content', 'choucroute'); ?>
+            <?php _e('404', 'choucroute'); ?>
         </h1>
+        <p>
+            <?php _e('There\'s nothing here', 'choucroute'); ?>
+        </p>
     </div>
 </div>
 

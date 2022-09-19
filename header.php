@@ -13,4 +13,4 @@
         <?php  get_template_part('template-parts/header/navbar') ?>
     </header>
 
-<main>
+    <main>

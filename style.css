@@ -12,9 +12,11 @@ Text Domain: choucroute
 */
 body {
   min-height: 100vh;
+  margin-bottom: 45px;
 }
 
 footer {
   position: fixed;
   bottom: 0;
+  height: 45px;
 }
