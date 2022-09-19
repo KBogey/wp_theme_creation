@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Choucroute Theme
+Author: Greg Desplaces
+Author URI: https://wordpress.org/
+Description: A theme to learn themes
+Tested up to: 6.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: choucroute
+*/
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}

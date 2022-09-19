@@ -1,0 +1,17 @@
+{
+  "name": "choucroute",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./src/assets/style/style.scss ./style.css --watch"
+  },
+  "author": "Greg Desplaces",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.54.9"
+  }
+}
