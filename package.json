@@ -4,13 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./src/assets/style/style.scss ./style.css --watch"
+    "sass": "sass ./src/assets/style/style.scss ./style.css --watch --no-source-map    "
   },
   "author": "Greg Desplaces",
   "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.2.1"
-  },
   "devDependencies": {
     "sass": "^1.54.9"
   }

@@ -14,7 +14,10 @@ Text Domain: choucroute
 */
 
 body {
-    background-color: black;
-    color: white;
     min-height: 100vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
