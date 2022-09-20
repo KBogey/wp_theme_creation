@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Choucroute Theme\n"
-"POT-Creation-Date: 2022-09-19 13:05+0200\n"
-"PO-Revision-Date: 2022-09-19 13:06+0200\n"
+"POT-Creation-Date: 2022-09-20 10:27+0200\n"
+"PO-Revision-Date: 2022-09-20 10:27+0200\n"
 "Last-Translator: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language-Team: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language: fr_FR\n"
@@ -22,13 +22,41 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
+#: 404.php:6
+msgid "404"
+msgstr "404"
+
+#: 404.php:9
+msgid "There's nothing here"
+msgstr "Il n’y a pas de contenu ici"
+
+#: category.php:7 single.php:14
+msgid "Category : "
+msgstr "Catégorie : "
+
+#: category.php:35 index.php:34 single.php:12
+msgid "By"
+msgstr "Par"
+
+#: category.php:36 index.php:35 single.php:13
+msgid "the"
+msgstr "le / la"
+
+#: category.php:42 index.php:41
+msgid "Read more"
+msgstr "Lire plus"
+
 #: footer.php:9
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
 
-#: index.php:5
-msgid "here is the body content"
-msgstr "voici le contenu du corps"
+#: index.php:7
+msgid "Articles list"
+msgstr "Liste d’articles"
+
+#: single.php:40
+msgid "No post found"
+msgstr "Aucun article trouvé"
 
 #. Theme Name of the plugin/theme
 msgid "Choucroute Theme"
@@ -45,3 +73,6 @@ msgstr "Greg Desplaces"
 #. Author URI of the plugin/theme
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
+
+#~ msgid "here is the body content"
+#~ msgstr "voici le contenu du corps"
