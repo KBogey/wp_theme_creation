@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Choucroute Theme\n"
-"POT-Creation-Date: 2022-09-20 10:27+0200\n"
-"PO-Revision-Date: 2022-09-19 12:17+0200\n"
+"POT-Creation-Date: 2022-09-20 15:16+0200\n"
+"PO-Revision-Date: 2022-09-20 15:16+0200\n"
 "Last-Translator: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language-Team: Greg Desplacers <contact@gregdesplaces.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,46 +16,87 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: 404.php:6
-msgid "404"
-msgstr ""
-
-#: 404.php:9
-msgid "There's nothing here"
-msgstr ""
-
-#: category.php:7 single.php:14
+#: category.php:7 single.php:17
 msgid "Category : "
 msgstr ""
 
-#: category.php:35 index.php:34 single.php:12
-msgid "By"
+#: comments.php:12
+msgid "Leave a Comment"
 msgstr ""
 
-#: category.php:36 index.php:35 single.php:13
-msgid "the"
-msgstr ""
-
-#: category.php:42 index.php:41
-msgid "Read more"
+#: comments.php:14
+msgid "Your comment*"
 msgstr ""
 
 #: footer.php:9
 msgid "All rights reserved."
 msgstr ""
 
+#: functions.php:91
+msgid "Main Menu in the bootstrap navbar"
+msgstr ""
+
+#: inc/class-walker-bootstrap-menu.php:368
+msgid "Add a menu"
+msgstr ""
+
+#: inc/filters-bootstrap-comments-form.php:17
+msgid "Your name*"
+msgstr ""
+
+#: inc/filters-bootstrap-comments-form.php:18
+msgid "Your email*"
+msgstr ""
+
+#: inc/filters-bootstrap-comments-form.php:19
+msgid "Your website url"
+msgstr ""
+
+#: inc/filters-bootstrap-comments-form.php:20
+msgid "Save my name and email in this browser for the next time I comment"
+msgstr ""
+
+#: inc/filters-bootstrap-comments-form.php:39
+msgid "Send message"
+msgstr ""
+
 #: index.php:7
 msgid "Articles list"
 msgstr ""
 
-#: single.php:40
+#: single.php:12 template-parts/main/cards.php:23
+msgid "By"
+msgstr ""
+
+#: single.php:14
+msgid "l j F Y"
+msgstr ""
+
+#: single.php:15
+#, php-format
+msgid "the %s"
+msgstr ""
+
+#: single.php:33
+msgid "Comments are close"
+msgstr ""
+
+#: single.php:41
 msgid "No post found"
+msgstr ""
+
+#: template-parts/main/cards.php:24
+msgid "the"
+msgstr ""
+
+#: template-parts/main/cards.php:30
+msgid "Read more"
 msgstr ""
 
 #. Theme Name of the plugin/theme

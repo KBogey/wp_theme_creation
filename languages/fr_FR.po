@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Choucroute Theme\n"
-"POT-Creation-Date: 2022-09-20 10:27+0200\n"
-"PO-Revision-Date: 2022-09-20 10:27+0200\n"
+"POT-Creation-Date: 2022-09-20 16:59+0200\n"
+"PO-Revision-Date: 2022-09-20 16:59+0200\n"
 "Last-Translator: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language-Team: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language: fr_FR\n"
@@ -16,47 +16,101 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: 404.php:6
-msgid "404"
-msgstr "404"
-
-#: 404.php:9
-msgid "There's nothing here"
-msgstr "Il n’y a pas de contenu ici"
-
-#: category.php:7 single.php:14
+#: category.php:7 single.php:17
 msgid "Category : "
 msgstr "Catégorie : "
 
-#: category.php:35 index.php:34 single.php:12
-msgid "By"
-msgstr "Par"
+#: comments.php:12
+msgid "Your comment*"
+msgstr "Votre commentaire*"
 
-#: category.php:36 index.php:35 single.php:13
-msgid "the"
-msgstr "le / la"
+#: comments.php:15
+msgid "Leave a Comment"
+msgstr "Laisser un commentaire"
 
-#: category.php:42 index.php:41
-msgid "Read more"
-msgstr "Lire plus"
+#: comments.php:21
+msgid "* Required fields"
+msgstr "Champs obligatoires"
+
+#: comments.php:24
+#, php-format
+msgid "Logged in as <a href=%1$s>%2$s</a>. <a href=%3$s title=<?>Log out?</a>"
+msgstr ""
+"Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
+"out of this account\">Se déconnecter?</a>"
 
 #: footer.php:9
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
 
+#: functions.php:91
+msgid "Main Menu in the bootstrap navbar"
+msgstr "Menu principal dans navbar de bootstrap"
+
+#: inc/class-walker-bootstrap-menu.php:368
+msgid "Add a menu"
+msgstr "Ajouter un menu"
+
+#: inc/filters-bootstrap-comments-form.php:17
+msgid "Your name*"
+msgstr "Votre nom*"
+
+#: inc/filters-bootstrap-comments-form.php:18
+msgid "Your email*"
+msgstr "Votre mail *"
+
+#: inc/filters-bootstrap-comments-form.php:19
+msgid "Your website url"
+msgstr "L'adresse de votre site web"
+
+#: inc/filters-bootstrap-comments-form.php:20
+msgid "Save my name and email in this browser for the next time I comment"
+msgstr ""
+"Enregistrer mon nom et mon adresse e-mail dans ce navigateur pour mon "
+"prochain commentaire"
+
+#: inc/filters-bootstrap-comments-form.php:39
+msgid "Send message"
+msgstr "Envoyer le message"
+
 #: index.php:7
 msgid "Articles list"
 msgstr "Liste d’articles"
 
-#: single.php:40
+#: single.php:12 template-parts/main/cards.php:23
+msgid "By"
+msgstr "Par"
+
+#: single.php:14
+msgid "l j F Y"
+msgstr "l j F Y"
+
+#: single.php:15
+#, php-format
+msgid "the %s"
+msgstr "le %s"
+
+#: single.php:33
+msgid "Comments are close"
+msgstr "Les commentaires sont désactivés"
+
+#: single.php:41
 msgid "No post found"
 msgstr "Aucun article trouvé"
+
+#: template-parts/main/cards.php:24
+msgid "the"
+msgstr "le / la"
+
+#: template-parts/main/cards.php:30
+msgid "Read more"
+msgstr "Lire plus"
 
 #. Theme Name of the plugin/theme
 msgid "Choucroute Theme"
@@ -74,5 +128,7 @@ msgstr "Greg Desplaces"
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
-#~ msgid "here is the body content"
-#~ msgstr "voici le contenu du corps"
+#, php-format
+#~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+#~ msgstr ""
+#~ "Vous devez être <a href=\"%s\">connecté</a> pour poster un commentaire."

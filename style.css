@@ -21,6 +21,11 @@ footer {
   height: 45px;
 }
 
+.ch-logo {
+  width: 64px;
+  height: 64px;
+}
+
 .ch-404 {
   background-size: cover;
   background-position: center;
@@ -28,7 +33,7 @@ footer {
   background-repeat: no-repeat;
 }
 
-.ch-logo {
-  width: 64px;
-  height: 64px;
+#ch-comments-container a {
+  color: #e3e3e3;
+  text-decoration: underline;
 }

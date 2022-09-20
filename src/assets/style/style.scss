@@ -13,25 +13,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: choucroute
 */
 
-body {
-    min-height: 100vh;
-    margin-bottom: 45px;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    height: 45px;
-}
-
-.ch-404 {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-
-.ch-logo {
-    width: 64px;
-    height: 64px;
-}
+@import "general";
+@import "footer";
+@import "navbar";
+@import "404";
+@import "comments";

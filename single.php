@@ -27,9 +27,7 @@
                         <p><?php the_content() ?></p>
                         <div>
                             <?php if (comments_open()) : ?>
-                                    <div class="alert alert-success" role="alert">
-                                        <p> <?php _e('Comments are open', 'choucroute') ?></p>
-                                    </div>
+                                <?php comments_template(); ?>
                             <?php else : ?>
                                 <div class="alert alert-error" role="alert">
                                     <p> <?php _e('Comments are close', 'choucroute') ?></p>

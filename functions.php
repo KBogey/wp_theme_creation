@@ -142,3 +142,8 @@ function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {
     }
     return $atts;
 }
+
+/**
+ * Add comments fields and button filters to have bootstrap style
+ */
+require_once get_template_directory() . '/inc/filters-bootstrap-comments-form.php';
