@@ -119,8 +119,28 @@ function ch_setup_theme(): void
         'height' => 64,
         'width' => 64,
     ));
+
+    // 8. Add class to the custom logo
+        add_filter( 'get_custom_logo', 'ch_filter_custom_logo' );
 }
 add_action('after_setup_theme', 'ch_setup_theme');
+
+/**
+ * Add bootstrap class to the custom logo
+ *
+ * @return string
+ *
+ * @since 1.0.0
+ */
+function ch_filter_custom_logo() {
+    $custom_logo_id = get_theme_mod( 'custom_logo' );
+    return sprintf( '<a href="%1$s" class="custom-logo-link" rel="home" itemprop="url">%2$s</a>',
+        esc_url( home_url( '/' ) ),
+        wp_get_attachment_image( $custom_logo_id, 'full', false, array(
+            'class'    => 'custom-logo img-fluid navbar-brand',
+        ) )
+    );
+}
 
 /**
  * Use namespaced data attribute for Bootstrap's dropdown toggles.
