@@ -3,7 +3,7 @@
 <footer class="container-fluid bg-secondary text-light">
     <div class="row  py-3">
         <div class="col-md-12">
-            <p class="text-center small mb-0 text-secondary">
+            <p class="text-center small mb-0 text-light">
                 <a class="text-light text-decoration-none" href="mailto:<?php echo bloginfo('admin_email'); ?>"><?php bloginfo('name'); ?></a>
                 &copy;<?php echo date('Y'); ?>
                 <?= __("All rights reserved.", 'choucroute'); ?>

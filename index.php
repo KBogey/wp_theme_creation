@@ -10,7 +10,7 @@
         <hr>
 
         <!-- ROW BOOTSTRAP  -->
-        <?php get_template_part('template-parts/main/cards'); ?>>
+        <?php get_template_part('template-parts/main/cards'); ?>
 
 
     </div>

@@ -10,8 +10,11 @@
                         <h1 class="text-uppercase"><?php the_title() ?></h1>
                         <div class="mb-3">
                             <?php _e('By', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_author() ?></span>,
-                            <?php _e('the', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_date() ?></span>.
-                            <?php _e('Category : ', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_category('|'); ?></span>
+                            <?php
+                                $the_date = '<span class="badge rounded-pill text-bg-warning">' .  date_i18n( __( 'l j F Y', 'choucroute' ) ) . '</span>';
+                                printf(__('the %s', 'choucroute'), $the_date);
+                            ?> .
+                            <?php _e('Category : ', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_category(' | '); ?></span>
                         </div>
 
                         <hr>
@@ -24,12 +27,12 @@
                         <p><?php the_content() ?></p>
                         <div>
                             <?php if (comments_open()) : ?>
-                                <div class="alert alert-success" role="alert">
-                                    <p> Les commentaires sont ouverts</p>
-                                </div>
+                                    <div class="alert alert-success" role="alert">
+                                        <p> <?php _e('Comments are open', 'choucroute') ?></p>
+                                    </div>
                             <?php else : ?>
                                 <div class="alert alert-error" role="alert">
-                                    <p> Les commentaires sont ouverts</p>
+                                    <p> <?php _e('Comments are close', 'choucroute') ?></p>
                                 </div>
                             <?php endif; ?>
                         </div>
