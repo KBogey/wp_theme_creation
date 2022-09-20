@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Choucroute Theme\n"
-"POT-Creation-Date: 2022-09-20 16:59+0200\n"
-"PO-Revision-Date: 2022-09-20 16:59+0200\n"
+"POT-Creation-Date: 2022-09-20 18:39+0200\n"
+"PO-Revision-Date: 2022-09-20 18:40+0200\n"
 "Last-Translator: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language-Team: Greg Desplacers <contact@gregdesplaces.com>\n"
 "Language: fr_FR\n"
@@ -30,20 +30,21 @@ msgstr "Catégorie : "
 msgid "Your comment*"
 msgstr "Votre commentaire*"
 
-#: comments.php:15
-msgid "Leave a Comment"
-msgstr "Laisser un commentaire"
-
-#: comments.php:21
+#: comments.php:13
 msgid "* Required fields"
-msgstr "Champs obligatoires"
+msgstr "* Champs obligatoires"
 
-#: comments.php:24
+#: comments.php:15
 #, php-format
-msgid "Logged in as <a href=%1$s>%2$s</a>. <a href=%3$s title=<?>Log out?</a>"
+msgid ""
+"Logged in as <a href=%1$s>%2$s</a>. <a href=%3$s title=<?>Log out?</a>. %4$s"
 msgstr ""
 "Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
-"out of this account\">Se déconnecter?</a>"
+"out of this account\">Se déconnecter?</a>. %4$s"
+
+#: comments.php:18
+msgid "Leave a Comment"
+msgstr "Laisser un commentaire"
 
 #: footer.php:9
 msgid "All rights reserved."
