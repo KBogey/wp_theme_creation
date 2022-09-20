@@ -18,7 +18,7 @@
     comment_form(array(
         'title_reply' => __('Leave a Comment', 'choucroute'),
         'comment_field' =>
-            "<div class='form-group'>x²x²²
+            "<div class='form-group'>
                 <label for='comment' class='d-none'>$textarea_placeholder</label>
                 <textarea id='comment' class='form-control' name='comment' cols='45' rows='8' aria-required='true' placeholder='$textarea_placeholder'></textarea>
             </div>",
