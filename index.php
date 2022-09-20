@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
     <div class="container my-4">
         <h2 class="text-center text-uppercase mb-3">
             <?php  _e( 'Articles list', 'choucroute' ) ; ?>
@@ -17,7 +19,7 @@
 
                             <a href="<?php the_permalink() ?>">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('bootstrap-card', array('class' => 'card-img-top')); ?>
+                                    <?php the_post_thumbnail('bootstrap-card', array('class' => 'card-img-top img-fluid')); ?>
                                 <?php else : ?>
                                     <img src="https://loremflickr.com/300/200" class="card-img-top" width="300" height="200" />
                                 <?php endif; ?>
