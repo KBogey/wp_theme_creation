@@ -1,6 +1,6 @@
 </main>
 
-<footer class="container-fluid bg-dark text-light">
+<footer class="container-fluid bg-secondary text-light">
     <div class="row  py-3">
         <div class="col-md-12">
             <p class="text-center small mb-0 text-secondary">

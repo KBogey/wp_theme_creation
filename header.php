@@ -8,7 +8,7 @@
     <title><?php bloginfo('name'); ?></title>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bg-dark text-light'); ?> >
     <header>
         <?php  get_template_part('template-parts/header/navbar') ?>
     </header>
