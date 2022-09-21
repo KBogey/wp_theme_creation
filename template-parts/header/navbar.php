@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
     <div class="container-fluid">
-            <?php if (has_custom_logo()) : ?>
-                <div class="ch-logo">
-                    <?php the_custom_logo() ?>
-                </div>
-            <?php else : ?>
-                <h1 class="site-title">
-                    <a class="navbar-brand" href="<?php bloginfo('wpurl') ?>"><?php bloginfo('name') ?></a>
-                </h1>
-                <h2 class="site-description"><?php bloginfo('description') ?></h2>
-            <?php endif; ?>
+        <?php if (has_custom_logo()) : ?>
+            <div class="ch-logo rounded-search">
+                <?php the_custom_logo() ?>
+            </div>
+        <?php else : ?>
+            <h1 class="site-title">
+                <a class="navbar-brand" href="<?php bloginfo('wpurl') ?>"><?php bloginfo('name') ?></a>
+            </h1>
+            <h2 class="site-description"><?php bloginfo('description') ?></h2>
+        <?php endif; ?>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,6 +26,6 @@
             'walker'          => new WP_Bootstrap_Navwalker(),
         )) ?>
 
-        </div>
+    </div>
     </div>
 </nav>

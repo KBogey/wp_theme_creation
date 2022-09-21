@@ -6,7 +6,7 @@
     <div class="row">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
-            <!-- COL BOOTSTRAP 9/12 : POST CONTENT-->
+                <!-- COL BOOTSTRAP 9/12 : POST CONTENT-->
                 <article class="col-md-9 mb-3">
                     <h1 class="text-uppercase"><?php the_title() ?></h1>
 
@@ -14,8 +14,8 @@
                     <div class="mb-3">
                         <?php _e('By', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_author() ?></span>,
                         <?php
-                            $the_date = '<span class="badge rounded-pill text-bg-warning">' .  date_i18n( __( 'l j F Y', 'choucroute' ) ) . '</span>';
-                            printf(__('the %s', 'choucroute'), $the_date);
+                        $the_date = '<span class="badge rounded-pill text-bg-warning">' .  date_i18n(__('l j F Y', 'choucroute')) . '</span>';
+                        printf(__('the %s', 'choucroute'), $the_date);
                         ?> .
                         <?php _e('Category : ', 'choucroute') ?> <span class="badge rounded-pill text-bg-warning"><?php the_category(' | '); ?></span>
                     </div>
@@ -41,17 +41,21 @@
             <?php endwhile; ?>
 
         <?php else : ?>
-                <!-- COL BOOTSTRAP  9/12 : NO POST FOUND-->
-                <div class="col-md-9 mb-3">
-                    <h1 class="text-uppercase"><?php _e('No post found', 'choucroute') ?></h1>
-                </div>
+            <!-- COL BOOTSTRAP  9/12 : NO POST FOUND-->
+            <div class="col-md-9 mb-3">
+                <h1 class="text-uppercase"><?php _e('No post found', 'choucroute') ?></h1>
+            </div>
         <?php endif; ?>
 
 
         <!-- COL BOOTSTRAP  3/12 : SIDEBAR -->
         <aside class="col-md-3">
             <!-- TODO : appeler une sidebar-->
-            Future sidebar
+            <div class="text-decoration-none list-unstyled">
+                <?php
+                dynamic_sidebar('ch_article_widget_zone');
+                ?>
+            </div>
         </aside>
 
     </div>

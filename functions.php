@@ -18,8 +18,8 @@ function ch_load_styles_and_scripts(): void
     wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css', '5.2.1');
     wp_register_style('bootstrap-icons',  'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css', '1.9.1');
     add_filter('style_loader_tag', 'ch_add_attributes_to_bootstrap_stylesheet', 10, 3);
-    wp_register_style( 'choucroute', get_template_directory_uri() . '/style.css', array('bootstrap', 'bootstrap-icons'), $theme->get( 'Version' ) );
-    wp_enqueue_style( 'choucroute' );
+    wp_register_style('choucroute', get_template_directory_uri() . '/style.css', array('bootstrap', 'bootstrap-icons'), $theme->get('Version'));
+    wp_enqueue_style('choucroute');
 
     // 3. Scripts
     wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js', array(), '5.2.1', true);
@@ -27,7 +27,7 @@ function ch_load_styles_and_scripts(): void
     wp_register_script('choucroute', get_template_directory_uri() . '/src/assets/scripts/script.js', array('jquery', 'bootstrap'), $theme->get('Version'), true);
     wp_enqueue_script('choucroute');
 }
-add_action( 'wp_enqueue_scripts', 'ch_load_styles_and_scripts' );
+add_action('wp_enqueue_scripts', 'ch_load_styles_and_scripts');
 
 
 /**
@@ -60,7 +60,7 @@ function ch_setup_theme(): void
     require_once get_template_directory() . '/inc/filters-bootstrap5-navbar-dropdown.php';
 
     // 3.Launch a filter to use dropdowns menu in bootstrap navbar
-    add_filter( 'nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3 );
+    add_filter('nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3);
 
     // 4.Load the theme's text domain
     load_theme_textdomain(
@@ -87,15 +87,32 @@ function ch_setup_theme(): void
     require_once get_template_directory() . '/inc/filters-bootstrap5-custom-logo-classes.php';
 
     // 8. Add class to the custom logo
-    add_filter( 'get_custom_logo', 'ch_filter_custom_logo' );
+    add_filter('get_custom_logo', 'ch_filter_custom_logo');
 
     // 9. Add comments fields and button filters to have bootstrap style
     require_once get_template_directory() . '/inc/filters-bootstrap-comments-form.php';
-
 }
 add_action('after_setup_theme', 'ch_setup_theme');
 
+//Création d'une zone de widget dans le footer
+function ch_add_sidebars()
+{
+    register_sidebar(array(
+        'id' => 'greg_footer_widget_zone',
+        'name' => 'Zone du footer',
+        'description' => 'Apparait dans le footer',
+        'before_widget' => '<aside>',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
+    ));
 
-
-
-
+    register_sidebar(array(
+        'id' => "ch_article_widget_zone",
+        'name' => 'Single article sidebar',
+        'description' => 'Single article sidebar',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'ch_add_sidebars');
